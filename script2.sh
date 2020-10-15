@@ -1,7 +1,7 @@
 #!/bin/bash
 apt update
 curl https://get.docker.com/ | bash
-usermod -m jenkins
+useradd -m jenkins
 sudo usermod -a -G docker jenkins
 usermod -aG root jenkins
 chmod 664 /var/run/docker.sock
