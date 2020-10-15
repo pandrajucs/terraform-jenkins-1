@@ -32,7 +32,7 @@ resource "aws_security_group" "allow_all" {
 //create Docker server
 
 resource "aws_instance" "server-1" {
-    ami = "ami-04f280e88da88653a"
+    ami = "ami-0817d428a6fb68645"
     availability_zone = "us-east-1a"
     instance_type = "t2.micro"
     key_name = "AWS_KeyPair"
@@ -49,7 +49,7 @@ resource "aws_instance" "server-1" {
 //create jenkins server
 
 resource "aws_instance" "server-2" {
-    ami = "ami-0385a73de2bee98f5"
+    ami = "ami-0817d428a6fb68645"
     availability_zone = "us-east-1a"
     instance_type = "t2.micro"
     key_name = "AWS_KeyPair"
